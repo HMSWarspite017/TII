@@ -1,0 +1,13 @@
+/* Styles scoped to the three secondary pages. */
+.subpage .page-intro{padding:34px 0 58px;background:var(--platinum);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.subpage .page-intro:after{content:"";position:absolute;right:8%;bottom:-90px;width:260px;height:260px;border:1px solid #ad987040;border-radius:50%;pointer-events:none}
+.subpage .breadcrumbs{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted);margin-bottom:45px}
+.subpage .breadcrumbs a:hover{color:var(--dark);text-decoration:underline}
+.subpage .page-intro h1{font-size:clamp(36px,4.5vw,62px);font-weight:400;line-height:1.2;margin:18px 0 22px;letter-spacing:1px}
+.subpage .page-description{font-size:17px;line-height:1.8;color:var(--muted);margin:0;position:relative;z-index:1}
+.subpage nav a[aria-current=page]{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:10px}
+.subpage .health{grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.subpage .health-art{padding:0;box-shadow:none;background:transparent}
+.subpage .health-art>img{height:auto;max-height:none;width:100%;display:block}
+.subpage .site-footer{border-top:1px solid var(--line)}
+@media(max-width:800px){.subpage .page-intro{padding:25px 0 40px}.subpage .breadcrumbs{margin-bottom:30px}.subpage .page-description{font-size:15px}.subpage .health{grid-template-columns:1fr;gap:35px}.subpage .health-art{order:0;max-width:620px;width:100%}.subpage .page-intro:after{right:-130px}}
