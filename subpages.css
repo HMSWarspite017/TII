@@ -1,6 +1,9 @@
 /* Styles scoped to the three secondary pages. */
-.subpage .page-intro{padding:34px 0 58px;background:var(--platinum);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
-.subpage .page-intro:after{content:"";position:absolute;right:8%;bottom:-90px;width:260px;height:260px;border:1px solid #ad987040;border-radius:50%;pointer-events:none}
+.subpage .page-intro{min-height:420px;padding:34px 0 58px;background:var(--platinum);border-bottom:1px solid var(--line);position:relative;overflow:hidden;display:flex;align-items:center}
+.subpage .page-intro:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--platinum) 0%,var(--platinum) 37%,rgba(244,245,241,.92) 48%,rgba(244,245,241,.24) 68%,rgba(244,245,241,0) 100%);pointer-events:none}
+.subpage .page-intro:after{content:"";position:absolute;z-index:2;right:8%;bottom:-90px;width:260px;height:260px;border:1px solid #d7c49380;border-radius:50%;pointer-events:none}
+.subpage .page-intro-image{position:absolute;inset:0 0 0 auto;width:67%;height:100%;object-fit:cover;object-position:center;filter:saturate(.88) contrast(.96)}
+.subpage .page-intro .wrap{position:relative;z-index:3;width:100%}
 .subpage .breadcrumbs{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted);margin-bottom:45px}
 .subpage .breadcrumbs a:hover{color:var(--dark);text-decoration:underline}
 .subpage .page-intro h1{font-size:clamp(36px,4.5vw,62px);font-weight:400;line-height:1.2;margin:18px 0 22px;letter-spacing:1px}
@@ -10,4 +13,5 @@
 .subpage .health-art{padding:0;box-shadow:none;background:transparent}
 .subpage .health-art>img{height:auto;max-height:none;width:100%;display:block}
 .subpage .site-footer{border-top:1px solid var(--line)}
-@media(max-width:800px){.subpage .page-intro{padding:25px 0 40px}.subpage .breadcrumbs{margin-bottom:30px}.subpage .page-description{font-size:15px}.subpage .health{grid-template-columns:1fr;gap:35px}.subpage .health-art{order:0;max-width:620px;width:100%}.subpage .page-intro:after{right:-130px}}
+@media(max-width:800px){.subpage .page-intro{min-height:500px;padding:25px 0 40px;align-items:flex-end}.subpage .page-intro-image{inset:0;width:100%;height:100%;object-position:65% center}.subpage .page-intro:before{background:linear-gradient(180deg,rgba(244,245,241,.08) 0%,rgba(244,245,241,.3) 38%,rgba(244,245,241,.96) 72%,var(--platinum) 100%)}.subpage .breadcrumbs{margin-bottom:30px}.subpage .page-description{font-size:15px}.subpage .health{grid-template-columns:1fr;gap:35px}.subpage .health-art{order:0;max-width:620px;width:100%}.subpage .page-intro:after{right:-130px}}
+@media(prefers-reduced-data:reduce){.subpage .page-intro-image{display:none}.subpage .page-intro:before{display:none}}
