@@ -149,6 +149,9 @@
 /* Compact product strip immediately below the site header. */
 .catalogue-nav .catalogue-label{display:block}
 html[lang=en] .catalogue-nav em{display:none}
+.medical-slogan{background:#fff;padding:38px 0 46px}
+.medical-slogan h1{margin:0;color:var(--dark);font-size:clamp(25px,2.5vw,38px);font-weight:500;line-height:1.35;letter-spacing:-.02em}
+@media(max-width:800px){.medical-slogan{padding:30px 0 36px}.medical-slogan h1{font-size:clamp(23px,6vw,30px)}}
 .featured-products{padding:12px 0 15px;border-bottom:1px solid var(--line)}
 .featured-rail{width:min(1300px,94%);padding-bottom:4px}
 .featured-image{height:146px}
