@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="./styles.css?v=20260927b">
 <link rel="stylesheet" href="./sections.css">
 <link rel="stylesheet" href="./subpages.css?v=20260927b">
-<link rel="stylesheet" href="./medical.css?v=20260928-certificates">
+<link rel="stylesheet" href="./medical.css?v=20260928-topstrip">
 <script defer src="./app.js">
 </script>
 <script defer src="./content.js">
@@ -46,6 +46,24 @@
 </div>
 </header>
 <main id="main">
+<section class="featured-products" aria-label="明星产品 / Featured products">
+<div class="featured-controls" aria-label="产品浏览控制">
+<button class="featured-arrow featured-arrow-prev" type="button" data-direction="-1" aria-label="上一组产品" title="Previous products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7"/></svg></button>
+<button class="featured-arrow featured-arrow-next" type="button" data-direction="1" aria-label="下一组产品" title="Next products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg></button>
+</div>
+<div class="featured-rail" tabindex="0" role="region" aria-label="明星产品横向列表 / Featured products">
+<div class="featured-track">
+<a class="featured-card" href="#feeding-pump"><span class="featured-image"><img src="./assets/images/medical/feeding-pump.webp" alt="Feeding Bag Set — Pump Feed" loading="lazy" decoding="async"></span><strong data-zh="泵用肠内营养袋套装" data-en="Feeding Bag Set — Pump Feed">泵用肠内营养袋套装</strong><span class="featured-category" data-zh="肠内营养" data-en="Enteral Feeding">肠内营养</span></a>
+<a class="featured-card" href="#feeding-gravity"><span class="featured-image"><img src="./assets/images/medical/feeding-gravity.webp" alt="Feeding Bag Set — Gravity Feed" loading="lazy" decoding="async"></span><strong data-zh="重力式肠内营养袋套装" data-en="Feeding Bag Set — Gravity Feed">重力式肠内营养袋套装</strong><span class="featured-category" data-zh="肠内营养" data-en="Enteral Feeding">肠内营养</span></a>
+<a class="featured-card" href="#feeding-double"><span class="featured-image"><img src="./assets/images/medical/feeding-double.webp" alt="Double Bag Set — Pump Feed" loading="lazy" decoding="async"></span><strong data-zh="双袋泵用营养套装" data-en="Double Bag Set — Pump Feed">双袋泵用营养套装</strong><span class="featured-category" data-zh="肠内营养" data-en="Enteral Feeding">肠内营养</span></a>
+<a class="featured-card" href="#luxury-urine-bag"><span class="featured-image"><img src="./assets/images/medical/urine-luxury.webp" alt="Luxury Urine Bag" loading="lazy" decoding="async"></span><strong data-zh="高端尿袋" data-en="Luxury Urine Bag">高端尿袋</strong><span class="featured-category" data-zh="泌尿产品" data-en="Urology">泌尿产品</span></a>
+<a class="featured-card" href="#urine-meter"><span class="featured-image"><img src="./assets/images/medical/urine-meter.webp" alt="Urine Meter" loading="lazy" decoding="async"></span><strong data-zh="尿液计量器" data-en="Urine Meter">尿液计量器</strong><span class="featured-category" data-zh="泌尿产品" data-en="Urology">泌尿产品</span></a>
+<a class="featured-card" href="#urine-leg-bag"><span class="featured-image"><img src="./assets/images/medical/urine-leg.webp" alt="Urine Leg Bag" loading="lazy" decoding="async"></span><strong data-zh="腿部尿袋" data-en="Urine Leg Bag">腿部尿袋</strong><span class="featured-category" data-zh="泌尿产品" data-en="Urology">泌尿产品</span></a>
+<a class="featured-card" href="#suction-liner"><span class="featured-image"><img src="./assets/images/medical/suction-liner.webp" alt="Suction Liner" loading="lazy" decoding="async"></span><strong data-zh="吸引内衬袋" data-en="Suction Liner">吸引内衬袋</strong><span class="featured-category" data-zh="负压吸引" data-en="Suction">负压吸引</span></a>
+<a class="featured-card" href="#dialysis-drainage"><span class="featured-image"><img src="./assets/images/medical/dialysis-drainage.webp" alt="Peritoneal Dialysis Drainage Bag" loading="lazy" decoding="async"></span><strong data-zh="腹膜透析引流袋" data-en="Peritoneal Dialysis Drainage Bag">腹膜透析引流袋</strong><span class="featured-category" data-zh="液体收集" data-en="Liquid Collection">液体收集</span></a>
+</div>
+</div>
+</section>
 <section class="page-intro medical-hero">
 <img class="page-intro-image" src="./assets/medical.jpg" alt="显微镜与医疗实验室设备" data-alt-zh="显微镜与医疗实验室设备" data-alt-en="Microscope and medical laboratory equipment">
 <div class="wrap">
@@ -63,34 +81,13 @@
 </section>
 <nav class="catalogue-nav" aria-label="产品分类 / Product categories">
 <div class="catalogue-nav-track wrap">
-<a href="#enteral"><small>01</small><span>肠内营养<em>Enteral Feeding</em></span></a>
-<a href="#urology"><small>02</small><span>泌尿产品<em>Urology</em></span></a>
-<a href="#suction"><small>03</small><span>负压吸引<em>Suction</em></span></a>
-<a href="#collection"><small>04</small><span>液体收集<em>Liquid Collection</em></span></a>
-<a href="#quality"><small>05</small><span>质量与认证<em>Quality &amp; Certifications</em></span></a>
+<a href="#enteral"><small>01</small><span><span class="catalogue-label" data-zh="肠内营养" data-en="Enteral Feeding">肠内营养</span><em>Enteral Feeding</em></span></a>
+<a href="#urology"><small>02</small><span><span class="catalogue-label" data-zh="泌尿产品" data-en="Urology">泌尿产品</span><em>Urology</em></span></a>
+<a href="#suction"><small>03</small><span><span class="catalogue-label" data-zh="负压吸引" data-en="Suction">负压吸引</span><em>Suction</em></span></a>
+<a href="#collection"><small>04</small><span><span class="catalogue-label" data-zh="液体收集" data-en="Liquid Collection">液体收集</span><em>Liquid Collection</em></span></a>
+<a href="#quality"><small>05</small><span><span class="catalogue-label" data-zh="质量与认证" data-en="Quality &amp; Certifications">质量与认证</span><em>Quality &amp; Certifications</em></span></a>
 </div>
 </nav>
-<section class="featured-products" aria-labelledby="featured-title">
-<div class="wrap featured-head">
-<div><p class="eyebrow">PRODUCT DISCOVERY</p><h2 id="featured-title">FEATURED PRODUCTS <span>明星产品</span></h2></div>
-<div class="featured-controls" aria-label="产品浏览控制">
-<button class="featured-arrow featured-arrow-prev" type="button" data-direction="-1" aria-label="上一组产品" title="Previous products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7"/></svg></button>
-<button class="featured-arrow featured-arrow-next" type="button" data-direction="1" aria-label="下一组产品" title="Next products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg></button>
-</div>
-</div>
-<div class="featured-rail" tabindex="0" role="region" aria-label="明星产品横向列表 / Featured products">
-<div class="featured-track">
-<a class="featured-card" href="#feeding-pump"><span class="featured-image"><img src="./assets/images/medical/feeding-pump.webp" alt="Feeding Bag Set — Pump Feed" loading="lazy" decoding="async"></span><span class="featured-category">ENTERAL FEEDING / 肠内营养</span><strong>Feeding Bag Set — Pump Feed</strong><span class="featured-zh">泵用肠内营养袋套装</span><span class="featured-note">500–1500 ml · Pump feeding</span></a>
-<a class="featured-card" href="#feeding-gravity"><span class="featured-image"><img src="./assets/images/medical/feeding-gravity.webp" alt="Feeding Bag Set — Gravity Feed" loading="lazy" decoding="async"></span><span class="featured-category">ENTERAL FEEDING / 肠内营养</span><strong>Feeding Bag Set — Gravity Feed</strong><span class="featured-zh">重力式肠内营养袋套装</span><span class="featured-note">500–1500 ml · Gravity feeding</span></a>
-<a class="featured-card" href="#feeding-double"><span class="featured-image"><img src="./assets/images/medical/feeding-double.webp" alt="Double Bag Set — Pump Feed" loading="lazy" decoding="async"></span><span class="featured-category">ENTERAL FEEDING / 肠内营养</span><strong>Double Bag Set — Pump Feed</strong><span class="featured-zh">双袋泵用营养套装</span><span class="featured-note">1000 / 1200 ml bag combinations</span></a>
-<a class="featured-card" href="#luxury-urine-bag"><span class="featured-image"><img src="./assets/images/medical/urine-luxury.webp" alt="Luxury Urine Bag" loading="lazy" decoding="async"></span><span class="featured-category">UROLOGY / 泌尿产品</span><strong>Luxury Urine Bag</strong><span class="featured-zh">高端尿袋</span><span class="featured-note">Clear scale · Anti-reflux design</span></a>
-<a class="featured-card" href="#urine-meter"><span class="featured-image"><img src="./assets/images/medical/urine-meter.webp" alt="Urine Meter" loading="lazy" decoding="async"></span><span class="featured-category">UROLOGY / 泌尿产品</span><strong>Urine Meter</strong><span class="featured-zh">尿液计量器</span><span class="featured-note">Measuring chamber · Sampling port</span></a>
-<a class="featured-card" href="#urine-leg-bag"><span class="featured-image"><img src="./assets/images/medical/urine-leg.webp" alt="Urine Leg Bag" loading="lazy" decoding="async"></span><span class="featured-category">UROLOGY / 泌尿产品</span><strong>Urine Leg Bag</strong><span class="featured-zh">腿部尿袋</span><span class="featured-note">500–1000 ml · Fixing straps</span></a>
-<a class="featured-card" href="#suction-liner"><span class="featured-image"><img src="./assets/images/medical/suction-liner.webp" alt="Suction Liner" loading="lazy" decoding="async"></span><span class="featured-category">SUCTION / 负压吸引</span><strong>Suction Liner</strong><span class="featured-zh">吸引内衬袋</span><span class="featured-note">1000–3000 ml · Filter options</span></a>
-<a class="featured-card" href="#dialysis-drainage"><span class="featured-image"><img src="./assets/images/medical/dialysis-drainage.webp" alt="Peritoneal Dialysis Drainage Bag" loading="lazy" decoding="async"></span><span class="featured-category">LIQUID COLLECTION / 液体收集</span><strong>Peritoneal Dialysis Drainage Bag</strong><span class="featured-zh">腹膜透析引流袋</span><span class="featured-note">Peritoneal drainage collection</span></a>
-</div>
-</div>
-</section>
 <div class="medical-catalogue">
 <section id="enteral" class="catalogue-chapter">
 <div class="wrap">

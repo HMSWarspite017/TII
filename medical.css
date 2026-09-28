@@ -145,3 +145,15 @@
 .certificate-gallery button span{display:block;margin-top:auto;padding:12px 14px 15px;border-top:1px solid var(--line);font-size:12px;line-height:1.45;color:var(--ink)}
 @media(max-width:800px){.certificate-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
 @media(max-width:430px){.certificate-gallery{grid-template-columns:1fr;max-width:330px;margin-inline:auto}}
+
+/* Compact product strip immediately below the site header. */
+.catalogue-nav .catalogue-label{display:block}
+html[lang=en] .catalogue-nav em{display:none}
+.featured-products{padding:12px 0 15px;border-bottom:1px solid var(--line)}
+.featured-rail{width:min(1300px,94%);padding-bottom:4px}
+.featured-image{height:146px}
+.featured-image img{object-fit:contain;padding:9px 12px}
+.featured-card strong{min-height:38px;margin-top:8px;font-size:14px;line-height:1.35}
+.featured-category{margin-top:2px;font-size:11px;line-height:1.4;letter-spacing:.2px;color:var(--muted)}
+@media(max-width:800px){.featured-products{padding:10px 0 13px}.featured-rail{width:100%;padding-bottom:2px}.featured-image{height:156px}.featured-card strong{min-height:38px;font-size:14px}.featured-category{font-size:11px}}
+@media(max-width:390px){.featured-image{height:145px}}
