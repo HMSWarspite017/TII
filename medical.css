@@ -95,7 +95,7 @@
 .featured-note{min-height:42px}
 .featured-controls{position:absolute;z-index:3;inset:50% max(2.5%,calc((100% - 1300px)/2)) auto;display:block;padding:0;opacity:0;pointer-events:none;transition:opacity .2s ease}
 .featured-products:hover .featured-controls,.featured-products:focus-within .featured-controls{opacity:1;pointer-events:auto}
-.featured-arrow{position:absolute;width:44px;height:44px;background:#fffffff2;border-color:#d2dbce;box-shadow:0 4px 14px rgba(29,56,47,.1);display:grid;place-items:center;transform:translateY(-50%);transition:opacity .2s,background .2s,border-color .2s,transform .2s}
+.featured-arrow{position:absolute;top:0;width:44px;height:44px;background:#fffffff2;border-color:#d2dbce;box-shadow:0 4px 14px rgba(29,56,47,.1);display:grid;place-items:center;transform:translateY(-50%);transition:opacity .2s,background .2s,border-color .2s,transform .2s}
 .featured-arrow-prev{left:0}.featured-arrow-next{right:0}
 .featured-arrow svg,.certificate-lightbox-close svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .featured-arrow:hover:not(:disabled){transform:translateY(calc(-50% - 2px))}
