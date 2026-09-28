@@ -28,3 +28,41 @@
 
 @media(max-width:800px){.paired-products{grid-template-columns:1fr}.paired-products .product-stage img{height:420px}}
 .medical-intro h2{max-width:680px;text-wrap:balance}
+
+/* Product discovery: a compact section index above a separate product rail. */
+.medical-page .catalogue-nav{position:sticky;top:100px;z-index:25;width:100%;max-width:none;margin:0;background:#fff;border-block:1px solid var(--line);box-shadow:0 8px 22px rgba(29,56,47,.035)}
+.catalogue-nav-track{display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none}
+.catalogue-nav-track::-webkit-scrollbar{display:none}
+.catalogue-nav a,.catalogue-nav a:first-child{flex:1 0 0;min-width:0;display:flex;align-items:center;gap:13px;padding:14px 12px;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s,background .2s}
+.catalogue-nav a:first-child{padding-left:0}
+.catalogue-nav a:hover,.catalogue-nav a:focus-visible,.catalogue-nav a.is-active{color:var(--dark);background:#f8faf3;border-bottom-color:var(--lime)}
+.catalogue-nav small{font-size:11px;color:var(--gold);align-self:flex-start;padding-top:2px}
+.catalogue-nav span{font-size:13px;font-weight:600;line-height:1.35}
+.catalogue-nav em{display:block;margin-top:2px;font-size:10px;line-height:1.35;font-style:normal;font-weight:400;color:var(--muted);letter-spacing:.15px}
+.featured-products{padding:76px 0 92px;background:#fff;overflow:hidden}
+.featured-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:27px}
+.featured-head .eyebrow{color:var(--gold);font-size:10px;letter-spacing:2.2px;margin:0 0 10px}
+.featured-head h2{font-size:clamp(27px,2.8vw,40px);font-weight:500;letter-spacing:-.7px;line-height:1.2;margin:0}
+.featured-head h2 span{display:block;margin-top:5px;font-size:15px;letter-spacing:2px;font-weight:400;color:var(--muted)}
+.featured-controls{display:flex;gap:10px;padding-bottom:4px}
+.featured-arrow{width:40px;height:40px;border:1px solid #cfd8ca;border-radius:50%;background:white;font-size:20px;line-height:1;transition:background .2s,border-color .2s,transform .2s}
+.featured-arrow:hover:not(:disabled){background:var(--platinum);border-color:var(--dark);transform:translateY(-2px)}
+.featured-arrow:disabled{opacity:.35}
+.featured-rail{width:min(1300px,88%);margin-inline:auto;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:#c2cebb transparent;padding-bottom:16px}
+.featured-track{display:flex;gap:18px;min-width:100%}
+.featured-card{flex:0 0 calc((100% - 72px)/5);min-width:0;display:block;scroll-snap-align:start;cursor:pointer}
+.featured-image{height:258px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#f7f8f5;border:1px solid #edf0e9;transition:background .25s,border-color .25s,transform .25s}
+.featured-image img{width:100%;height:100%;object-fit:contain;padding:20px 18px;transition:transform .3s ease}
+.featured-category{display:block;margin-top:17px;color:var(--gold);font-size:10px;letter-spacing:1.2px;line-height:1.4}
+.featured-card strong{display:block;min-height:45px;margin-top:7px;font-size:16px;font-weight:500;line-height:1.4;transition:color .25s}
+.featured-zh,.featured-note{display:block;font-size:12px;line-height:1.5;color:var(--muted)}
+.featured-note{margin-top:9px;border-top:1px solid var(--line);padding-top:10px;min-height:47px}
+.featured-card:hover .featured-image,.featured-card:focus-visible .featured-image{background:#f1f4ec;border-color:#d7e1d1;transform:translateY(-2px)}
+.featured-card:hover img,.featured-card:focus-visible img{transform:scale(1.05)}
+.featured-card:hover strong,.featured-card:focus-visible strong{color:#66812b}
+.medical-page .catalogue-chapter,.medical-page #quality{scroll-margin-top:170px}
+.medical-page #feeding-pump,.medical-page #feeding-gravity,.medical-page #feeding-double,.medical-page #luxury-urine-bag,.medical-page #urine-meter,.medical-page #urine-leg-bag,.medical-page #suction-liner,.medical-page #dialysis-drainage{scroll-margin-top:180px}
+@media(max-width:1100px){.catalogue-nav a,.catalogue-nav a:first-child{gap:9px;padding-inline:10px}.catalogue-nav span{font-size:12px}.catalogue-nav em{font-size:9px}.featured-card{flex-basis:calc((100% - 54px)/4)}}
+@media(max-width:800px){.medical-page .catalogue-nav{position:relative;top:auto;box-shadow:none}.catalogue-nav-track{width:100%;padding-inline:6%;scroll-snap-type:x proximity}.catalogue-nav a,.catalogue-nav a:first-child{flex:0 0 auto;min-width:154px;padding:14px 14px;scroll-snap-align:start}.catalogue-nav span{font-size:13px}.catalogue-nav em{font-size:10px}.featured-products{padding:52px 0 60px}.featured-head{align-items:center;margin-bottom:22px}.featured-head h2{font-size:29px}.featured-controls{display:none}.featured-rail{width:100%;padding-inline:6%;scroll-padding-inline:6%;scrollbar-width:none}.featured-rail::-webkit-scrollbar{display:none}.featured-track{gap:14px}.featured-card{flex-basis:72vw}.featured-image{height:320px}.medical-page .catalogue-chapter,.medical-page #quality,.medical-page #feeding-pump,.medical-page #feeding-gravity,.medical-page #feeding-double,.medical-page #luxury-urine-bag,.medical-page #urine-meter,.medical-page #urine-leg-bag,.medical-page #suction-liner,.medical-page #dialysis-drainage{scroll-margin-top:86px}}
+@media(max-width:430px){.featured-head h2{font-size:25px}.featured-head h2 span{font-size:13px}.featured-card{flex-basis:74vw}.featured-image{height:285px}}
+@media(prefers-reduced-motion:reduce){.featured-rail{scroll-behavior:auto}.featured-card img,.featured-image{transition:none}}
