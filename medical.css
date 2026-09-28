@@ -66,3 +66,53 @@
 @media(max-width:800px){.medical-page .catalogue-nav{position:relative;top:auto;box-shadow:none}.catalogue-nav-track{width:100%;padding-inline:6%;scroll-snap-type:x proximity}.catalogue-nav a,.catalogue-nav a:first-child{flex:0 0 auto;min-width:154px;padding:14px 14px;scroll-snap-align:start}.catalogue-nav span{font-size:13px}.catalogue-nav em{font-size:10px}.featured-products{padding:52px 0 60px}.featured-head{align-items:center;margin-bottom:22px}.featured-head h2{font-size:29px}.featured-controls{display:none}.featured-rail{width:100%;padding-inline:6%;scroll-padding-inline:6%;scrollbar-width:none}.featured-rail::-webkit-scrollbar{display:none}.featured-track{gap:14px}.featured-card{flex-basis:72vw}.featured-image{height:320px}.medical-page .catalogue-chapter,.medical-page #quality,.medical-page #feeding-pump,.medical-page #feeding-gravity,.medical-page #feeding-double,.medical-page #luxury-urine-bag,.medical-page #urine-meter,.medical-page #urine-leg-bag,.medical-page #suction-liner,.medical-page #dialysis-drainage{scroll-margin-top:86px}}
 @media(max-width:430px){.featured-head h2{font-size:25px}.featured-head h2 span{font-size:13px}.featured-card{flex-basis:74vw}.featured-image{height:285px}}
 @media(prefers-reduced-motion:reduce){.featured-rail{scroll-behavior:auto}.featured-card img,.featured-image{transition:none}}
+
+/* Compact product entry and browsing controls. */
+.medical-page .medical-hero{min-height:315px;padding-block:28px 34px;align-items:center}
+.medical-page .medical-hero .page-intro-image{width:64%;height:100%;object-fit:cover;object-position:58% 52%}
+.medical-page .medical-hero .breadcrumbs{margin-bottom:26px}
+.medical-page .medical-hero h1{margin:12px 0 12px;font-size:clamp(34px,3.6vw,52px)}
+.medical-page .medical-hero .page-description{font-size:16px}
+.medical-page .catalogue-nav{margin:0}
+.catalogue-nav-track{gap:16px;justify-content:space-between}
+.catalogue-nav a,.catalogue-nav a:first-child{flex:1 0 200px;min-width:200px;gap:14px;padding:18px 16px;border-inline:1px solid transparent}
+.catalogue-nav a:first-child{padding-left:16px}
+.catalogue-nav a:hover,.catalogue-nav a:focus-visible,.catalogue-nav a.is-active{border-inline-color:#e2e9de}
+.catalogue-nav small{min-width:22px;font-size:12px;padding-top:3px}
+.catalogue-nav span{font-size:14px;line-height:1.35}
+.catalogue-nav em{margin-top:4px;font-size:10px;letter-spacing:.3px}
+.featured-products{position:relative;padding:42px 0 54px}
+.featured-head{margin-bottom:20px}
+.featured-head h2{font-size:clamp(25px,2.4vw,35px)}
+.featured-head h2 span{font-size:14px}
+.featured-rail{padding-bottom:10px}
+.featured-track{gap:16px}
+.featured-card{flex-basis:calc((100% - 64px)/5)}
+.featured-image{height:224px}
+.featured-image img{padding:17px 15px}
+.featured-category{margin-top:13px}
+.featured-card strong{min-height:42px;font-size:15px}
+.featured-note{min-height:42px}
+.featured-controls{position:absolute;z-index:3;inset:50% max(2.5%,calc((100% - 1300px)/2)) auto;display:block;padding:0;opacity:0;pointer-events:none;transition:opacity .2s ease}
+.featured-products:hover .featured-controls,.featured-products:focus-within .featured-controls{opacity:1;pointer-events:auto}
+.featured-arrow{position:absolute;width:44px;height:44px;background:#fffffff2;border-color:#d2dbce;box-shadow:0 4px 14px rgba(29,56,47,.1);display:grid;place-items:center;transform:translateY(-50%);transition:opacity .2s,background .2s,border-color .2s,transform .2s}
+.featured-arrow-prev{left:0}.featured-arrow-next{right:0}
+.featured-arrow svg,.certificate-lightbox-close svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.featured-arrow:hover:not(:disabled){transform:translateY(calc(-50% - 2px))}
+.featured-arrow:disabled{opacity:0;visibility:hidden}
+.quality{background:#f6f7f3;color:var(--ink);border-block:1px solid #e6ebe1}
+.quality .eyebrow{color:var(--gold)}
+.quality p{color:var(--muted)}
+.quality-slots span{background:#fff;border-color:#d5ded0;color:var(--dark)}
+.certificate-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:34px}
+.certificate-gallery:empty{display:none}
+.certificate-gallery button{padding:0;background:#fff;border:1px solid #dfe6db;overflow:hidden;aspect-ratio:.74;transition:transform .2s,border-color .2s}
+.certificate-gallery button:hover,.certificate-gallery button:focus-visible{border-color:var(--gold);transform:translateY(-2px)}
+.certificate-gallery img{width:100%;height:100%;padding:10px;object-fit:contain}
+.certificate-lightbox{max-width:min(900px,92vw);max-height:90vh;padding:20px;border:0;background:#fff;box-shadow:0 24px 80px rgba(0,0,0,.28)}
+.certificate-lightbox::backdrop{background:rgba(20,35,28,.7)}
+.certificate-lightbox img{width:auto;height:auto;max-width:calc(92vw - 40px);max-height:calc(90vh - 40px);object-fit:contain}
+.certificate-lightbox-close{position:absolute;top:8px;right:8px;width:38px;height:38px;border:1px solid #d6ded2;border-radius:50%;background:#fff;display:grid;place-items:center}
+@media(max-width:1200px){.catalogue-nav a,.catalogue-nav a:first-child{flex-basis:190px;min-width:190px}.featured-card{flex-basis:calc((100% - 48px)/4)}}
+@media(max-width:800px){.medical-page .medical-hero{min-height:420px;padding-block:25px 36px;align-items:flex-end}.medical-page .medical-hero .page-intro-image{width:100%;object-position:64% center}.medical-page .medical-hero .breadcrumbs{margin-bottom:24px}.medical-page .medical-hero h1{font-size:42px}.medical-page .catalogue-nav{position:relative}.catalogue-nav-track{gap:12px}.catalogue-nav a,.catalogue-nav a:first-child{flex-basis:174px;min-width:174px;padding:15px 14px}.featured-products{padding:31px 0 40px}.featured-head{margin-bottom:18px}.featured-rail{padding-bottom:8px}.featured-track{gap:14px}.featured-card{flex-basis:68vw}.featured-image{height:286px}.featured-controls{display:none}.certificate-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.quality-inner{gap:22px}}
+@media(max-width:390px){.medical-page .medical-hero{min-height:400px}.medical-page .medical-hero h1{font-size:37px}.catalogue-nav a,.catalogue-nav a:first-child{flex-basis:164px;min-width:164px}.featured-card{flex-basis:76vw}.featured-image{height:260px}.featured-head h2{font-size:24px}.certificate-gallery{grid-template-columns:1fr}}

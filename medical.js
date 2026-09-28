@@ -47,3 +47,26 @@ if (categoryLinks.length && 'IntersectionObserver' in window) {
     if (section) observer.observe(section);
   });
 }
+
+const certificateGallery = document.querySelector('[data-certificate-gallery]');
+const certificateLightbox = document.querySelector('.certificate-lightbox');
+
+if (certificateGallery && certificateLightbox) {
+  const lightboxImage = certificateLightbox.querySelector('img');
+  const closeLightbox = certificateLightbox.querySelector('.certificate-lightbox-close');
+
+  certificateGallery.addEventListener('click', (event) => {
+    const trigger = event.target.closest('button[data-certificate]');
+    if (!trigger) return;
+    const image = trigger.querySelector('img');
+    if (!image?.src) return;
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt;
+    certificateLightbox.showModal();
+  });
+
+  closeLightbox.addEventListener('click', () => certificateLightbox.close());
+  certificateLightbox.addEventListener('click', (event) => {
+    if (event.target === certificateLightbox) certificateLightbox.close();
+  });
+}

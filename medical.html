@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="./styles.css?v=20260927b">
 <link rel="stylesheet" href="./sections.css">
 <link rel="stylesheet" href="./subpages.css?v=20260927b">
-<link rel="stylesheet" href="./medical.css?v=20260928-featured">
+<link rel="stylesheet" href="./medical.css?v=20260928-compact">
 <script defer src="./app.js">
 </script>
 <script defer src="./content.js">
@@ -61,13 +61,6 @@
 <p class="page-description" data-zh="专业医疗耗材，服务多元临床场景。" data-en="Reliable medical consumables for diverse clinical applications.">专业医疗耗材，服务多元临床场景。</p>
 </div>
 </section>
-<section class="medical-intro section wrap">
-<p class="eyebrow">MEDICAL PRODUCT COLLECTION</p>
-<div>
-<h2 class="" data-zh="面向临床的产品， 关注每一处细节。" data-en="Products for clinical care. Attention to every detail.">面向临床的产品， 关注每一处细节。</h2>
-<p class="" data-zh="从营养输注到液体收集，以完整套装、连接配件与多种规格，呈现适用于不同护理场景的医疗耗材。" data-en="From enteral feeding to liquid collection, explore complete sets, connection accessories and specification options for different care settings.">从营养输注到液体收集，以完整套装、连接配件与多种规格，呈现适用于不同护理场景的医疗耗材。</p>
-</div>
-</section>
 <nav class="catalogue-nav" aria-label="产品分类 / Product categories">
 <div class="catalogue-nav-track wrap">
 <a href="#enteral"><small>01</small><span>肠内营养<em>Enteral Feeding</em></span></a>
@@ -81,8 +74,8 @@
 <div class="wrap featured-head">
 <div><p class="eyebrow">PRODUCT DISCOVERY</p><h2 id="featured-title">FEATURED PRODUCTS <span>明星产品</span></h2></div>
 <div class="featured-controls" aria-label="产品浏览控制">
-<button class="featured-arrow" type="button" data-direction="-1" aria-label="上一组产品" title="Previous products">&#8592;</button>
-<button class="featured-arrow" type="button" data-direction="1" aria-label="下一组产品" title="Next products">&#8594;</button>
+<button class="featured-arrow featured-arrow-prev" type="button" data-direction="-1" aria-label="上一组产品" title="Previous products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7"/></svg></button>
+<button class="featured-arrow featured-arrow-next" type="button" data-direction="1" aria-label="下一组产品" title="Next products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg></button>
 </div>
 </div>
 <div class="featured-rail" tabindex="0" role="region" aria-label="明星产品横向列表 / Featured products">
@@ -646,18 +639,23 @@
 </div>
 <section id="quality" class="quality section">
 <div class="wrap quality-inner">
-<p class="eyebrow light">QUALITY &amp; MANUFACTURING</p>
+<p class="eyebrow">QUALITY &amp; CERTIFICATIONS</p>
 <div>
-<h2 data-zh="生产与质量体系" data-en="Quality &amp; manufacturing">生产与质量体系</h2>
+<h2 data-zh="质量与认证" data-en="Quality &amp; Certifications">质量与认证</h2>
 <p data-zh="产品资料列示制造商的生产设施及质量体系。具体型号的认证与注册资料，请联系我们确认。" data-en="The catalogue describes manufacturer facilities and quality systems. Contact us for certification and registration documents for specific models.">产品资料列示制造商的生产设施及质量体系。具体型号的认证与注册资料，请联系我们确认。</p>
 <div class="quality-slots" aria-label="资料中列示的质量体系">
 <span>ISO 13485</span>
 <span>CE</span>
 <span>FDA</span>
 </div>
+<div class="certificate-gallery" data-certificate-gallery aria-label="证书图片"></div>
 </div>
 </div>
 </section>
+<dialog class="certificate-lightbox" aria-label="证书预览">
+<button type="button" class="certificate-lightbox-close" aria-label="关闭证书预览"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+<img src="" alt="">
+</dialog>
 <section class="medical-final section">
 <div class="wrap">
 <p class="eyebrow">LET’S CONNECT</p>
