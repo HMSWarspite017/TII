@@ -116,3 +116,32 @@
 @media(max-width:1200px){.catalogue-nav a,.catalogue-nav a:first-child{flex-basis:190px;min-width:190px}.featured-card{flex-basis:calc((100% - 48px)/4)}}
 @media(max-width:800px){.medical-page .medical-hero{min-height:420px;padding-block:25px 36px;align-items:flex-end}.medical-page .medical-hero .page-intro-image{width:100%;object-position:64% center}.medical-page .medical-hero .breadcrumbs{margin-bottom:24px}.medical-page .medical-hero h1{font-size:42px}.medical-page .catalogue-nav{position:relative}.catalogue-nav-track{gap:12px}.catalogue-nav a,.catalogue-nav a:first-child{flex-basis:174px;min-width:174px;padding:15px 14px}.featured-products{padding:31px 0 40px}.featured-head{margin-bottom:18px}.featured-rail{padding-bottom:8px}.featured-track{gap:14px}.featured-card{flex-basis:68vw}.featured-image{height:286px}.featured-controls{display:none}.certificate-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.quality-inner{gap:22px}}
 @media(max-width:390px){.medical-page .medical-hero{min-height:400px}.medical-page .medical-hero h1{font-size:37px}.catalogue-nav a,.catalogue-nav a:first-child{flex-basis:164px;min-width:164px}.featured-card{flex-basis:76vw}.featured-image{height:260px}.featured-head h2{font-size:24px}.certificate-gallery{grid-template-columns:1fr}}
+
+/* Keep every category visible across desktop and tablet widths. */
+.medical-page .catalogue-nav{display:block}
+.catalogue-nav-track{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;width:min(1300px,94%);overflow:visible}
+.catalogue-nav a,.catalogue-nav a:first-child{min-width:0;white-space:normal;gap:10px;padding:16px 11px}
+.catalogue-nav a span{min-width:0}
+.catalogue-nav em{overflow-wrap:anywhere}
+@media(min-width:801px) and (max-width:1100px){.catalogue-nav-track{gap:4px;width:96%}.catalogue-nav a,.catalogue-nav a:first-child{gap:7px;padding:14px 6px}.catalogue-nav small{min-width:20px}.catalogue-nav span{font-size:13px}.catalogue-nav em{font-size:9px}}
+@media(max-width:800px){.catalogue-nav-track{display:flex;gap:12px;width:100%;overflow-x:auto;justify-content:flex-start}.catalogue-nav a,.catalogue-nav a:first-child{flex:0 0 174px;min-width:174px;padding:15px 14px}.catalogue-nav em{overflow-wrap:normal}}
+@media(max-width:390px){.catalogue-nav a,.catalogue-nav a:first-child{flex-basis:164px;min-width:164px}}
+
+/* Bring the product focus and certificate section into the light page palette. */
+.meter-focus{background:#f7f8f5;color:var(--ink);border:1px solid #e4e9e0}
+.meter-focus .eyebrow,.meter-focus .product-kicker{color:var(--gold)!important}
+.meter-focus .catalogue-copy>p,.meter-focus .catalogue-specs dd,.meter-focus .product-figure>figcaption{color:var(--muted)}
+.meter-focus .catalogue-specs dt{color:var(--ink)}
+.meter-focus .catalogue-specs,.meter-focus .catalogue-specs>div,.chamber-row{border-color:var(--line)}
+.meter-focus .product-stage{border:1px solid #e4e9e0}
+.meter-focus .feature-list span{background:#fff;border-color:#ccd5bf;color:var(--dark)}
+.quality{background:#fff}
+.quality-inner{display:block}
+.quality-inner>.eyebrow{margin-bottom:18px}
+.quality-inner>div>p{max-width:760px}
+.certificate-gallery{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:38px}
+.certificate-gallery button{display:flex;flex-direction:column;align-items:stretch;width:100%;height:100%;aspect-ratio:auto;text-align:left;box-shadow:0 1px 8px rgba(29,56,47,.04)}
+.certificate-gallery img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;padding:10px;background:#fff}
+.certificate-gallery button span{display:block;margin-top:auto;padding:12px 14px 15px;border-top:1px solid var(--line);font-size:12px;line-height:1.45;color:var(--ink)}
+@media(max-width:800px){.certificate-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
+@media(max-width:430px){.certificate-gallery{grid-template-columns:1fr;max-width:330px;margin-inline:auto}}
