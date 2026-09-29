@@ -8,6 +8,7 @@
 .country-heading h3{font-size:23px}
 .country-heading>span{font-size:11px}
 .country-links .social-link{display:inline-flex;align-items:center;gap:5px;width:max-content}
+.country-links .branch-link:not([href]),.country-links .social-link:not([href]){color:#798170;cursor:default}
 .country-links .social-link svg,.facebook-link svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .contact-details .regional-contact{display:grid;grid-template-columns:minmax(0,1fr) 120px;gap:24px;align-items:start}
 .contact-information{min-width:0}
