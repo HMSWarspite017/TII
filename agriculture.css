@@ -1,0 +1,121 @@
+/* Plant Health page only; shared TII navigation, tokens and language logic are reused. */
+.agriculture-page main{overflow-wrap:break-word}
+.agriculture-page .ag-section{padding-block:90px}
+.agriculture-page h2{font-size:clamp(30px,2.8vw,42px);font-weight:400;line-height:1.4;letter-spacing:.3px;margin-bottom:0}
+.agriculture-page h3{font-size:20px;font-weight:500;line-height:1.45;margin-bottom:12px}
+.agriculture-page .ag-lead,.agriculture-page .ag-section-heading>p,.agriculture-page .ag-approach-grid p,.agriculture-page .ag-capabilities p{font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:0}
+.agriculture-page .ag-number{font-size:12px;letter-spacing:1.5px;color:var(--gold);font-variant-numeric:tabular-nums}
+.agriculture-page .ag-title-second{color:#788369}
+.agriculture-page .site-header nav a[aria-current=location]{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:10px}
+.agriculture-page .ag-intro{background:var(--platinum);padding:30px 0 48px}
+.agriculture-page .breadcrumbs{margin-bottom:30px;flex-wrap:wrap;row-gap:8px}
+.agriculture-page .ag-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:6%;align-items:center}
+.agriculture-page .ag-intro-copy{padding-block:20px}
+.agriculture-page h1{font-size:clamp(38px,4vw,60px);font-weight:400;letter-spacing:-.6px;line-height:1.3;margin:0 0 26px}
+.agriculture-page .ag-intro .ag-lead{max-width:570px}
+.agriculture-page .ag-intro .text-link{margin-top:22px}
+.agriculture-page .ag-intro-visual{margin:0;min-width:0}
+.agriculture-page .ag-intro-visual>img{aspect-ratio:1.14;height:auto;object-fit:cover}
+.agriculture-page .ag-intro-visual figcaption{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;color:var(--muted);padding-top:16px;line-height:1.5}
+.agriculture-page .ag-intro-visual figcaption>span:first-child{letter-spacing:1.6px;color:var(--dark)}
+.agriculture-page .ag-section-heading{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:42px}
+.agriculture-page .ag-section-heading>p{max-width:350px}
+.agriculture-page .ag-approach-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;column-gap:70px}
+.agriculture-page .ag-approach-grid li{border-top:1px solid var(--line);padding:25px 0;display:grid;grid-template-columns:35px 1fr;gap:20px}
+.agriculture-page .ag-approach-grid .ag-number{padding-top:5px}
+.agriculture-page .ag-approach-grid h3{margin-bottom:7px}
+.agriculture-page .ag-purpose{background:var(--platinum);padding-block:64px;border-block:1px solid var(--line)}
+.agriculture-page .ag-purpose-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.agriculture-page .ag-purpose-grid>div+div{border-left:1px solid var(--line);padding-left:70px}
+.agriculture-page .ag-vision{font-size:clamp(26px,2.5vw,38px);font-weight:400;line-height:1.6;margin:0;max-width:460px}
+.agriculture-page .ag-why{display:grid;grid-template-columns:.95fr 1.5fr;gap:7%}
+.agriculture-page .ag-why h2{font-size:clamp(28px,2.4vw,36px);line-height:1.55}
+.agriculture-page .ag-scenes{margin:36px 0 0}
+.agriculture-page .ag-scenes>div{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-items:start}
+.agriculture-page .ag-scenes img{height:auto;aspect-ratio:3/4;object-fit:cover}
+.agriculture-page .ag-scenes img:nth-child(2){margin-top:22px}
+.agriculture-page .ag-scenes figcaption{font-size:11px;color:var(--muted);line-height:1.8;margin-top:17px}
+.agriculture-page .ag-capabilities{display:grid;grid-template-columns:1fr 1fr;gap:28px 35px}
+.agriculture-page .ag-capabilities article{border-top:1px solid var(--line);padding-top:20px;min-width:0}
+.agriculture-page .ag-capabilities .ag-number{display:block;margin-bottom:14px}
+.agriculture-page .ag-capabilities h3{font-size:18px}
+.agriculture-page .ag-capabilities p{font-size:14px;line-height:1.85}
+.agriculture-page .ag-crops{background:#f8f9f5}
+.agriculture-page .ag-crop-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.agriculture-page .ag-crop-card{min-width:0}
+.agriculture-page .ag-crop-photo{aspect-ratio:4/5;overflow:hidden;background:var(--platinum)}
+.agriculture-page .ag-crop-photo img{height:100%;object-fit:cover;transition:transform .5s}
+.agriculture-page .ag-crop-name{display:flex;align-items:baseline;gap:15px;margin-top:22px}
+.agriculture-page .ag-crop-name h3{font-size:25px;margin-bottom:9px}
+.agriculture-page .ag-reserved{display:block;border:0;border-top:1px solid var(--line);padding:12px 0 0;margin-top:8px;width:100%;background:none;text-align:left;color:var(--muted);font-size:12px;line-height:1.5;opacity:1}
+.agriculture-page .ag-products{display:grid;grid-template-columns:1fr 1fr;gap:10%}
+.agriculture-page .ag-products h2{margin-bottom:22px}
+.agriculture-page .ag-products .ag-lead{max-width:410px}
+.agriculture-page .ag-product-list{list-style:none;padding:0;margin:0}
+.agriculture-page .ag-product-list li{display:grid;grid-template-columns:25px 1fr auto;gap:18px;align-items:center;padding-block:22px;border-top:1px solid var(--line)}
+.agriculture-page .ag-product-list li:last-child{border-bottom:1px solid var(--line)}
+.agriculture-page .ag-product-list h3{font-size:18px;margin:0}
+.agriculture-page .ag-status{font-size:11px;color:var(--muted);white-space:nowrap}
+.agriculture-page .ag-contact{padding-block:55px;background:var(--platinum)}
+.agriculture-page .ag-contact>.wrap{display:flex;justify-content:space-between;align-items:center;gap:35px}
+.agriculture-page .ag-contact h2{font-size:clamp(28px,2.6vw,38px)}
+.agriculture-page .ag-contact .eyebrow{margin-bottom:15px}
+.agriculture-page .ag-contact .text-link{flex-shrink:0;margin:0}
+html[lang=en] .agriculture-page h1{font-size:clamp(38px,3.7vw,55px);letter-spacing:-1.8px}
+@media(hover:hover){.agriculture-page .ag-crop-card:hover img{transform:scale(1.035)}}
+@media(min-width:801px) and (max-width:1150px){.agriculture-page .site-header nav,.agriculture-page:lang(en) .site-header nav{gap:18px}.agriculture-page .site-header nav a{font-size:14px}}
+@media(max-width:1100px){
+  .agriculture-page .ag-intro-grid{gap:5%}
+  .agriculture-page .ag-intro-visual>img{aspect-ratio:.85}
+  .agriculture-page .ag-why{grid-template-columns:1fr;gap:40px}
+  .agriculture-page .ag-why-intro{display:grid;grid-template-columns:1.1fr 1fr;column-gap:8%}
+  .agriculture-page .ag-why-intro>.eyebrow{grid-column:1}
+  .agriculture-page .ag-why-intro>h2{grid-column:1}
+  .agriculture-page .ag-scenes{grid-column:2;grid-row:1/3;margin:0;max-width:360px;justify-self:end}
+  .agriculture-page .ag-capabilities{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+  .agriculture-page .ag-crop-grid{gap:18px}
+  .agriculture-page .ag-purpose-grid{gap:40px}
+  .agriculture-page .ag-purpose-grid>div+div{padding-left:40px}
+}
+@media(max-width:800px){
+  .agriculture-page .ag-section{padding-block:60px}
+  .agriculture-page .ag-intro{padding:24px 0 32px}
+  .agriculture-page .ag-intro-grid{grid-template-columns:1fr;gap:30px}
+  .agriculture-page .ag-intro-copy{padding:0}
+  .agriculture-page .ag-intro-visual>img{aspect-ratio:1.6;object-position:50% 55%}
+  .agriculture-page h1,html[lang=en] .agriculture-page h1{font-size:clamp(35px,6.5vw,50px);letter-spacing:-1px}
+  .agriculture-page .ag-section-heading{display:block;margin-bottom:30px}
+  .agriculture-page .ag-section-heading>p{margin-top:20px;max-width:500px}
+  .agriculture-page .ag-approach-grid{column-gap:28px}
+  .agriculture-page .ag-approach-grid li{grid-template-columns:24px 1fr;gap:10px}
+  .agriculture-page .ag-purpose{padding-block:45px}
+  .agriculture-page .ag-capabilities{grid-template-columns:1fr 1fr;gap:28px}
+  .agriculture-page .ag-crop-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 18px}
+  .agriculture-page .ag-crop-photo{aspect-ratio:1}
+  .agriculture-page .ag-products{grid-template-columns:1fr;gap:30px}
+  .agriculture-page .ag-products .ag-lead{max-width:600px}
+  .agriculture-page .ag-contact>.wrap{display:block}
+  .agriculture-page .ag-contact .text-link{margin-top:20px}
+}
+@media(max-width:540px){
+  .agriculture-page .eyebrow{font-size:11px;letter-spacing:2px;margin-bottom:20px}
+  .agriculture-page .breadcrumbs{font-size:12px;gap:10px;margin-bottom:30px}
+  .agriculture-page .ag-lead,.agriculture-page .ag-section-heading>p,.agriculture-page .ag-approach-grid p{font-size:14px;line-height:1.9}
+  .agriculture-page .ag-approach-grid{grid-template-columns:1fr}
+  .agriculture-page .ag-approach-grid li{padding-block:21px;gap:16px}
+  .agriculture-page .ag-purpose-grid{grid-template-columns:1fr;gap:30px}
+  .agriculture-page .ag-purpose-grid>div+div{border-left:0;border-top:1px solid var(--line);padding:30px 0 0}
+  .agriculture-page .ag-why-intro{display:block}
+  .agriculture-page .ag-scenes{margin:25px 0 0;max-width:none}
+  .agriculture-page .ag-capabilities{grid-template-columns:1fr;gap:24px}
+  .agriculture-page .ag-capabilities article{display:grid;grid-template-columns:25px 1fr;gap:0 16px}
+  .agriculture-page .ag-capabilities .ag-number{padding-top:5px}
+  .agriculture-page .ag-capabilities p{grid-column:2}
+  .agriculture-page .ag-crop-grid{gap:26px 15px}
+  .agriculture-page .ag-crop-photo{aspect-ratio:4/5}
+  .agriculture-page .ag-crop-name{gap:10px;margin-top:15px}
+  .agriculture-page .ag-crop-name h3{font-size:22px}
+  .agriculture-page .ag-product-list li{gap:12px;grid-template-columns:22px 1fr auto}
+  .agriculture-page .ag-product-list h3{font-size:16px}
+  .agriculture-page .ag-status{font-size:10px}
+}
