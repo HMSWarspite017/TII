@@ -4,7 +4,7 @@ All images are stored locally. No external image requests are needed at runtime.
 
 ## Existing TII image
 
-- Hero: `../agriculture.jpg` (2400 × 1799). Reused unchanged from the existing homepage.
+- Previous hero: `../agriculture.jpg` (2400 × 1799). Retained for its existing uses elsewhere; no longer used on this page.
 
 ## User-provided brochure
 
@@ -32,3 +32,9 @@ License: https://www.pexels.com/license/
 - `coffee.jpg` — Sergiu Iacob: https://www.pexels.com/photo/a-close-up-shot-of-a-coffea-plant-6152431/
 
 Each download uses `https://images.pexels.com/photos/{id}/pexels-photo-{id}.jpeg?auto=compress&cs=tinysrgb&w=1000&q=88`.
+
+## Plant Health refinement — 2026-10-12
+
+- Hero: `plant-health-hero.webp`, 1536 × 1024, generated using the built-in image_gen tool and encoded as WebP (quality 88). General illustrative scene, not a photograph of a TII-owned facility.
+- Prompt: Refined editorial photograph of healthy tomato plants in a modern growing environment, simple trellis supports and discreet drip irrigation, natural leaf texture and green/ripening tomatoes, soft morning daylight, restrained forest/sage/earth palette, central crop-safe composition; no people, text, logos, aerial fields or technology overlays.
+- Our Approach vignette and seven journey illustrations: original inline SVG, with schematic plant/root/bud/flower/fruit progression. Labels and explanations are selectable bilingual HTML using the existing data-zh/data-en language switch. Illustrations are conceptual, not crop-specific technical diagrams.

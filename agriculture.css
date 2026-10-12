@@ -119,3 +119,61 @@ html[lang=en] .agriculture-page h1{font-size:clamp(38px,3.7vw,55px);letter-spaci
   .agriculture-page .ag-product-list h3{font-size:16px}
   .agriculture-page .ag-status{font-size:10px}
 }
+
+/* October Plant Health refinement: scoped to this page. */
+.agriculture-page .ag-intro-visual>img{object-position:44% 50%}
+.agriculture-page .ag-purpose{padding-block:56px}
+.agriculture-page #approach{padding-bottom:64px}
+.agriculture-page .ag-approach-title{display:flex;align-items:center;gap:32px;min-width:0}
+.agriculture-page #approach-title{font-size:clamp(28px,2.35vw,36px);line-height:1.28;letter-spacing:0;font-weight:400}
+.agriculture-page .ag-approach-botanical{width:88px;flex:0 0 88px;align-self:end}
+.agriculture-page .ag-approach-botanical svg{display:block;width:100%;height:auto}
+.agriculture-page #approach .ag-section-heading>p{max-width:290px;line-height:1.7}
+.agriculture-page .ag-journey{padding:64px 0 54px;background:#f3f4ef;border-block:1px solid #e4e7de}
+.agriculture-page .ag-journey .ag-section-heading{margin-bottom:38px}
+.agriculture-page .ag-journey h2{font-size:clamp(28px,2.35vw,36px);line-height:1.3;letter-spacing:0}
+.agriculture-page .ag-journey .ag-section-heading>p{max-width:300px;line-height:1.7}
+.agriculture-page .ag-journey-stages{list-style:none;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));padding:0;margin:0;gap:0}
+.agriculture-page .ag-journey-stages>li{min-width:0;position:relative;padding-inline:12px}
+.agriculture-page .ag-journey-number{display:block;font-size:14px;line-height:1;letter-spacing:1.2px;color:#8b7958;font-variant-numeric:tabular-nums}
+.agriculture-page .ag-journey-plant{margin:8px -12px 0;background:linear-gradient(to bottom,transparent 64.7%,#e9ecdf 64.7%);border-bottom:1px solid #dce1d6}
+.agriculture-page .ag-journey-plant svg{display:block;width:100%;height:190px}
+.agriculture-page .ag-journey-copy{padding-top:22px}
+.agriculture-page .ag-journey-copy h3{font-size:17px;font-weight:500;line-height:1.45;letter-spacing:0;margin-bottom:10px}
+.agriculture-page .ag-journey-copy p{font-size:13px;line-height:1.65;color:var(--muted);margin:0;max-width:150px}
+.agriculture-page .ag-journey-note{font-size:11px;line-height:1.6;color:var(--muted);margin:32px 12px 0}
+html[lang=en] .agriculture-page .ag-journey-copy h3{font-size:15px;min-height:44px}
+@media(max-width:1100px){
+ .agriculture-page .ag-approach-title{gap:20px}
+ .agriculture-page .ag-approach-botanical{width:72px;flex-basis:72px}
+ .agriculture-page .ag-journey-stages>li{padding-inline:8px}
+ .agriculture-page .ag-journey-plant{margin-inline:-8px}
+ .agriculture-page .ag-journey-plant svg{height:160px}
+ .agriculture-page .ag-journey-copy h3{font-size:15px}
+}
+@media(max-width:800px){
+ .agriculture-page .ag-intro-visual>img{object-position:44% 48%}
+ .agriculture-page .ag-purpose{padding-block:44px}
+ .agriculture-page #approach{padding-bottom:44px}
+ .agriculture-page .ag-approach-title{justify-content:space-between;gap:18px}
+ .agriculture-page #approach .ag-section-heading>p{max-width:340px;margin-top:22px}
+ .agriculture-page .ag-journey{padding-block:48px}
+ .agriculture-page .ag-journey .ag-section-heading{margin-bottom:28px}
+ .agriculture-page .ag-journey .ag-section-heading>p{max-width:340px}
+ .agriculture-page .ag-journey-stages{grid-template-columns:1fr}
+ .agriculture-page .ag-journey-stages>li{display:grid;grid-template-columns:28px 110px 1fr;gap:18px;align-items:center;padding:12px 0;border-top:1px solid #dce1d6}
+ .agriculture-page .ag-journey-stages>li:last-child{border-bottom:1px solid #dce1d6}
+ .agriculture-page .ag-journey-plant{margin:0;border:0;background:none}
+ .agriculture-page .ag-journey-plant svg{height:140px}
+ .agriculture-page .ag-journey-copy{padding:0}
+ .agriculture-page .ag-journey-copy h3,html[lang=en] .agriculture-page .ag-journey-copy h3{font-size:18px;min-height:0}
+ .agriculture-page .ag-journey-copy p{font-size:14px;max-width:280px}
+ .agriculture-page .ag-journey-note{margin:24px 0 0}
+}
+@media(max-width:400px){
+ .agriculture-page #approach-title{font-size:27px}
+ .agriculture-page .ag-approach-botanical{width:60px;flex-basis:60px}
+ .agriculture-page .ag-journey-stages>li{grid-template-columns:24px 86px 1fr;gap:12px}
+ .agriculture-page .ag-journey-plant svg{height:125px}
+ .agriculture-page .ag-journey-copy h3,html[lang=en] .agriculture-page .ag-journey-copy h3{font-size:16px}
+}
