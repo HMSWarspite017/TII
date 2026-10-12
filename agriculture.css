@@ -3,7 +3,7 @@
 .agriculture-page .ag-section{padding-block:90px}
 .agriculture-page h2{font-size:clamp(30px,2.8vw,42px);font-weight:400;line-height:1.4;letter-spacing:.3px;margin-bottom:0}
 .agriculture-page h3{font-size:20px;font-weight:500;line-height:1.45;margin-bottom:12px}
-.agriculture-page .ag-lead,.agriculture-page .ag-section-heading>p,.agriculture-page .ag-approach-grid p,.agriculture-page .ag-capabilities p{font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:0}
+.agriculture-page .ag-lead,.agriculture-page .ag-section-heading>p,.agriculture-page .ag-capabilities p{font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:0}
 .agriculture-page .ag-number{font-size:12px;letter-spacing:1.5px;color:var(--gold);font-variant-numeric:tabular-nums}
 .agriculture-page .ag-title-second{color:#788369}
 .agriculture-page .site-header nav a[aria-current=location]{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:10px}
@@ -20,10 +20,6 @@
 .agriculture-page .ag-intro-visual figcaption>span:first-child{letter-spacing:1.6px;color:var(--dark)}
 .agriculture-page .ag-section-heading{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:42px}
 .agriculture-page .ag-section-heading>p{max-width:350px}
-.agriculture-page .ag-approach-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;column-gap:70px}
-.agriculture-page .ag-approach-grid li{border-top:1px solid var(--line);padding:25px 0;display:grid;grid-template-columns:35px 1fr;gap:20px}
-.agriculture-page .ag-approach-grid .ag-number{padding-top:5px}
-.agriculture-page .ag-approach-grid h3{margin-bottom:7px}
 .agriculture-page .ag-purpose{background:var(--platinum);padding-block:64px;border-block:1px solid var(--line)}
 .agriculture-page .ag-purpose-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
 .agriculture-page .ag-purpose-grid>div+div{border-left:1px solid var(--line);padding-left:70px}
@@ -86,8 +82,6 @@ html[lang=en] .agriculture-page h1{font-size:clamp(38px,3.7vw,55px);letter-spaci
   .agriculture-page h1,html[lang=en] .agriculture-page h1{font-size:clamp(35px,6.5vw,50px);letter-spacing:-1px}
   .agriculture-page .ag-section-heading{display:block;margin-bottom:30px}
   .agriculture-page .ag-section-heading>p{margin-top:20px;max-width:500px}
-  .agriculture-page .ag-approach-grid{column-gap:28px}
-  .agriculture-page .ag-approach-grid li{grid-template-columns:24px 1fr;gap:10px}
   .agriculture-page .ag-purpose{padding-block:45px}
   .agriculture-page .ag-capabilities{grid-template-columns:1fr 1fr;gap:28px}
   .agriculture-page .ag-crop-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 18px}
@@ -100,9 +94,7 @@ html[lang=en] .agriculture-page h1{font-size:clamp(38px,3.7vw,55px);letter-spaci
 @media(max-width:540px){
   .agriculture-page .eyebrow{font-size:11px;letter-spacing:2px;margin-bottom:20px}
   .agriculture-page .breadcrumbs{font-size:12px;gap:10px;margin-bottom:30px}
-  .agriculture-page .ag-lead,.agriculture-page .ag-section-heading>p,.agriculture-page .ag-approach-grid p{font-size:14px;line-height:1.9}
-  .agriculture-page .ag-approach-grid{grid-template-columns:1fr}
-  .agriculture-page .ag-approach-grid li{padding-block:21px;gap:16px}
+  .agriculture-page .ag-lead,.agriculture-page .ag-section-heading>p{font-size:14px;line-height:1.9}
   .agriculture-page .ag-purpose-grid{grid-template-columns:1fr;gap:30px}
   .agriculture-page .ag-purpose-grid>div+div{border-left:0;border-top:1px solid var(--line);padding:30px 0 0}
   .agriculture-page .ag-why-intro{display:block}
@@ -123,57 +115,94 @@ html[lang=en] .agriculture-page h1{font-size:clamp(38px,3.7vw,55px);letter-spaci
 /* October Plant Health refinement: scoped to this page. */
 .agriculture-page .ag-intro-visual>img{object-position:44% 50%}
 .agriculture-page .ag-purpose{padding-block:56px}
-.agriculture-page #approach{padding-bottom:64px}
-.agriculture-page .ag-approach-title{display:flex;align-items:center;gap:32px;min-width:0}
-.agriculture-page #approach-title{font-size:clamp(28px,2.35vw,36px);line-height:1.28;letter-spacing:0;font-weight:400}
-.agriculture-page .ag-approach-botanical{width:88px;flex:0 0 88px;align-self:end}
-.agriculture-page .ag-approach-botanical svg{display:block;width:100%;height:auto}
-.agriculture-page #approach .ag-section-heading>p{max-width:290px;line-height:1.7}
-.agriculture-page .ag-journey{padding:64px 0 54px;background:#f3f4ef;border-block:1px solid #e4e7de}
-.agriculture-page .ag-journey .ag-section-heading{margin-bottom:38px}
-.agriculture-page .ag-journey h2{font-size:clamp(28px,2.35vw,36px);line-height:1.3;letter-spacing:0}
-.agriculture-page .ag-journey .ag-section-heading>p{max-width:300px;line-height:1.7}
-.agriculture-page .ag-journey-stages{list-style:none;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));padding:0;margin:0;gap:0}
-.agriculture-page .ag-journey-stages>li{min-width:0;position:relative;padding-inline:12px}
-.agriculture-page .ag-journey-number{display:block;font-size:14px;line-height:1;letter-spacing:1.2px;color:#8b7958;font-variant-numeric:tabular-nums}
-.agriculture-page .ag-journey-plant{margin:8px -12px 0;background:linear-gradient(to bottom,transparent 64.7%,#e9ecdf 64.7%);border-bottom:1px solid #dce1d6}
-.agriculture-page .ag-journey-plant svg{display:block;width:100%;height:190px}
-.agriculture-page .ag-journey-copy{padding-top:22px}
-.agriculture-page .ag-journey-copy h3{font-size:17px;font-weight:500;line-height:1.45;letter-spacing:0;margin-bottom:10px}
-.agriculture-page .ag-journey-copy p{font-size:13px;line-height:1.65;color:var(--muted);margin:0;max-width:150px}
-.agriculture-page .ag-journey-note{font-size:11px;line-height:1.6;color:var(--muted);margin:32px 12px 0}
-html[lang=en] .agriculture-page .ag-journey-copy h3{font-size:15px;min-height:44px}
-@media(max-width:1100px){
- .agriculture-page .ag-approach-title{gap:20px}
- .agriculture-page .ag-approach-botanical{width:72px;flex-basis:72px}
- .agriculture-page .ag-journey-stages>li{padding-inline:8px}
- .agriculture-page .ag-journey-plant{margin-inline:-8px}
- .agriculture-page .ag-journey-plant svg{height:160px}
- .agriculture-page .ag-journey-copy h3{font-size:15px}
-}
 @media(max-width:800px){
  .agriculture-page .ag-intro-visual>img{object-position:44% 48%}
  .agriculture-page .ag-purpose{padding-block:44px}
- .agriculture-page #approach{padding-bottom:44px}
- .agriculture-page .ag-approach-title{justify-content:space-between;gap:18px}
- .agriculture-page #approach .ag-section-heading>p{max-width:340px;margin-top:22px}
- .agriculture-page .ag-journey{padding-block:48px}
- .agriculture-page .ag-journey .ag-section-heading{margin-bottom:28px}
- .agriculture-page .ag-journey .ag-section-heading>p{max-width:340px}
- .agriculture-page .ag-journey-stages{grid-template-columns:1fr}
- .agriculture-page .ag-journey-stages>li{display:grid;grid-template-columns:28px 110px 1fr;gap:18px;align-items:center;padding:12px 0;border-top:1px solid #dce1d6}
- .agriculture-page .ag-journey-stages>li:last-child{border-bottom:1px solid #dce1d6}
- .agriculture-page .ag-journey-plant{margin:0;border:0;background:none}
- .agriculture-page .ag-journey-plant svg{height:140px}
- .agriculture-page .ag-journey-copy{padding:0}
- .agriculture-page .ag-journey-copy h3,html[lang=en] .agriculture-page .ag-journey-copy h3{font-size:18px;min-height:0}
- .agriculture-page .ag-journey-copy p{font-size:14px;max-width:280px}
- .agriculture-page .ag-journey-note{margin:24px 0 0}
 }
-@media(max-width:400px){
- .agriculture-page #approach-title{font-size:27px}
- .agriculture-page .ag-approach-botanical{width:60px;flex-basis:60px}
- .agriculture-page .ag-journey-stages>li{grid-template-columns:24px 86px 1fr;gap:12px}
- .agriculture-page .ag-journey-plant svg{height:125px}
- .agriculture-page .ag-journey-copy h3,html[lang=en] .agriculture-page .ag-journey-copy h3{font-size:16px}
+
+/* Field Notes — scoped to the two approved Plant Health sections. */
+.agriculture-page #approach { padding-block: 88px; background: #fff; }
+.agriculture-page #approach .ag-approach-heading { display: grid; grid-template-columns: minmax(0, 1fr) 350px; align-items: end; gap: 40px; margin-bottom: 40px; }
+.agriculture-page #approach .eyebrow,
+.agriculture-page #plant-health-journey .eyebrow { margin: 0 0 20px; font-size: 12px; line-height: 1.5; letter-spacing: 2px; }
+.agriculture-page #approach-title { margin: 0; font-size: 40px; font-weight: 400; line-height: 1.3; letter-spacing: 0; }
+.agriculture-page #approach .ag-approach-intro { margin: 0; font-size: 15px; line-height: 1.8; color: var(--muted); }
+.agriculture-page #approach .ag-approach-body { display: grid; grid-template-columns: minmax(0, 45fr) minmax(0, 55fr); align-items: start; gap: 56px; }
+.agriculture-page #approach .ag-field-photo { margin: 0; min-width: 0; }
+.agriculture-page #approach .ag-field-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 54%; }
+.agriculture-page #approach .ag-field-photo figcaption { margin-top: 14px; font-size: 11px; line-height: 1.6; color: var(--muted); }
+.agriculture-page #approach .ag-approach-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; list-style: none; padding: 0; margin: 0; }
+.agriculture-page #approach .ag-approach-grid > li { display: grid; grid-template-columns: 28px minmax(0, 1fr); align-items: start; gap: 16px; padding: 0; margin: 0; border: 0; min-width: 0; }
+.agriculture-page #approach .ag-approach-grid > li:nth-child(3),
+.agriculture-page #approach .ag-approach-grid > li:nth-child(5) { border-top: 1px solid var(--line); padding-top: 24px; margin-top: 2px; }
+.agriculture-page #approach .ag-number { display: block; padding-top: 4px; font-size: 12px; line-height: 1.5; letter-spacing: 1px; color: var(--gold); font-variant-numeric: tabular-nums; }
+.agriculture-page #approach .ag-approach-grid h3 { margin: 0 0 6px; font-size: 19px; font-weight: 500; line-height: 1.45; letter-spacing: 0; }
+.agriculture-page #approach .ag-approach-grid p { margin: 0; font-size: 15px; line-height: 1.8; color: var(--muted); }
+.agriculture-page #plant-health-journey { padding-block: 64px; background: #f3f4ef; border-block: 1px solid var(--line); }
+.agriculture-page #plant-health-journey .ag-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 36px; }
+.agriculture-page #journey-title { margin: 0; font-size: 34px; font-weight: 400; line-height: 1.35; letter-spacing: 0; }
+.agriculture-page #plant-health-journey .ag-section-heading > p { max-width: 350px; margin: 0; font-size: 15px; line-height: 1.8; color: var(--muted); }
+.agriculture-page #plant-health-journey .ag-journey-chapters { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr) minmax(0, 2fr); gap: 12px; }
+.agriculture-page #plant-health-journey .ag-journey-chapter { margin: 0; min-width: 0; }
+.agriculture-page #plant-health-journey .ag-journey-photo { display: block; width: 100%; height: clamp(250px, 20vw, 280px); object-fit: cover; }
+.agriculture-page #plant-health-journey .ag-journey-photo--establish { object-position: 50% 56%; }
+.agriculture-page #plant-health-journey .ag-journey-photo--flower { object-position: 50% 45%; }
+.agriculture-page #plant-health-journey .ag-journey-photo--harvest { object-position: 50% 50%; }
+.agriculture-page #plant-health-journey .ag-journey-stages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; list-style: none; padding: 0; margin: 20px 0 0; border-top: 1px solid var(--line); }
+.agriculture-page #plant-health-journey .ag-journey-chapter:nth-child(2) .ag-journey-stages { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.agriculture-page #plant-health-journey .ag-journey-stages > li { position: relative; min-width: 0; padding: 22px 8px 0 0; }
+.agriculture-page #plant-health-journey .ag-journey-stages > li::before { content: ''; position: absolute; top: -1px; left: 0; width: 1px; height: 6px; background: var(--gold); }
+.agriculture-page #plant-health-journey .ag-journey-number { display: block; margin-bottom: 10px; font-size: 12px; line-height: 1.5; letter-spacing: 1px; color: var(--gold); font-variant-numeric: tabular-nums; }
+.agriculture-page #plant-health-journey .ag-journey-stages h3 { margin: 0; font-size: 17px; font-weight: 500; line-height: 1.5; letter-spacing: 0; overflow-wrap: normal; }
+.agriculture-page #plant-health-journey .ag-journey-note { margin: 32px 0 0; font-size: 11px; line-height: 1.6; color: var(--muted); }
+@media (min-width: 1100px) and (max-width: 1350px) {
+  .agriculture-page #approach .ag-approach-heading { grid-template-columns: minmax(0, 1fr) 290px; gap: 28px; }
+  .agriculture-page #approach .ag-approach-body { gap: 40px; }
+}
+@media (max-width: 1099px) {
+  .agriculture-page #approach .ag-approach-heading { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .agriculture-page #approach .ag-approach-intro { max-width: 570px; }
+  .agriculture-page #approach .ag-approach-body { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .agriculture-page #approach .ag-field-photo img { aspect-ratio: 3 / 2; object-position: 50% 64%; }
+  .agriculture-page #plant-health-journey .ag-section-heading { display: block; }
+  .agriculture-page #plant-health-journey .ag-section-heading > p { max-width: 570px; margin-top: 20px; }
+  .agriculture-page #plant-health-journey .ag-journey-stages h3 { font-size: 16px; }
+  .agriculture-page #plant-health-journey .ag-journey-stages > li { padding-right: 0; }
+  .agriculture-page #plant-health-journey .ag-journey-stages h3 { hyphens: auto; overflow-wrap: anywhere; }
+  html[lang=en] .agriculture-page #plant-health-journey .ag-journey-stages h3 { font-size: 15px; }
+}
+@media (max-width: 767px) {
+  .agriculture-page #approach { width: auto; margin-inline: 20px; padding-block: 56px; }
+  .agriculture-page #approach .ag-approach-heading { gap: 20px; margin-bottom: 28px; }
+  .agriculture-page #approach .eyebrow,
+  .agriculture-page #plant-health-journey .eyebrow { margin-bottom: 20px; font-size: 11px; letter-spacing: 1.8px; }
+  .agriculture-page #approach-title { font-size: 30px; line-height: 1.35; }
+  .agriculture-page #approach .ag-approach-intro,
+  .agriculture-page #approach .ag-approach-grid p { font-size: 14px; line-height: 1.8; }
+  .agriculture-page #approach .ag-approach-grid { gap: 20px; }
+  .agriculture-page #approach .ag-approach-grid > li { grid-template-columns: 24px minmax(0, 1fr); gap: 12px; }
+  .agriculture-page #approach .ag-approach-grid > li:nth-child(3),
+  .agriculture-page #approach .ag-approach-grid > li:nth-child(5) { padding-top: 22px; }
+  .agriculture-page #approach .ag-approach-grid h3 { font-size: 18px; }
+  .agriculture-page #plant-health-journey { padding-block: 48px; }
+  .agriculture-page #plant-health-journey > .wrap { width: auto; margin-inline: 20px; }
+  .agriculture-page #journey-title { font-size: 28px; line-height: 1.4; }
+  .agriculture-page #plant-health-journey .ag-section-heading { margin-bottom: 28px; }
+  .agriculture-page #plant-health-journey .ag-section-heading > p { font-size: 14px; }
+  .agriculture-page #plant-health-journey .ag-journey-chapters { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .agriculture-page #plant-health-journey .ag-journey-photo { height: auto; aspect-ratio: 3 / 2; }
+  .agriculture-page #plant-health-journey .ag-journey-photo--establish { object-position: 50% 64%; }
+  .agriculture-page #plant-health-journey .ag-journey-photo--flower { object-position: 50% 45%; }
+  .agriculture-page #plant-health-journey .ag-journey-stages,
+  .agriculture-page #plant-health-journey .ag-journey-chapter:nth-child(2) .ag-journey-stages { grid-template-columns: minmax(0, 1fr); border: 0; margin-top: 12px; }
+  .agriculture-page #plant-health-journey .ag-journey-stages > li { display: grid; grid-template-columns: 24px minmax(0, 1fr); align-items: baseline; column-gap: 12px; min-height: 40px; padding: 8px 0; }
+  .agriculture-page #plant-health-journey .ag-journey-stages > li::before { content: none; }
+  .agriculture-page #plant-health-journey .ag-journey-number { margin: 0; }
+  .agriculture-page #plant-health-journey .ag-journey-stages h3,
+  html[lang=en] .agriculture-page #plant-health-journey .ag-journey-stages h3 { font-size: 17px; }
+  .agriculture-page #plant-health-journey .ag-journey-note { margin-top: 24px; }
+}
+@media (max-width: 359px) {
+  .agriculture-page #approach,
+  .agriculture-page #plant-health-journey > .wrap { margin-inline: 16px; }
 }
