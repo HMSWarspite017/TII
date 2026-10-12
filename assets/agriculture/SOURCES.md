@@ -38,3 +38,8 @@ Each download uses `https://images.pexels.com/photos/{id}/pexels-photo-{id}.jpeg
 - Hero: `plant-health-hero.webp`, 1536 × 1024, generated using the built-in image_gen tool and encoded as WebP (quality 88). General illustrative scene, not a photograph of a TII-owned facility.
 - Prompt: Refined editorial photograph of healthy tomato plants in a modern growing environment, simple trellis supports and discreet drip irrigation, natural leaf texture and green/ripening tomatoes, soft morning daylight, restrained forest/sage/earth palette, central crop-safe composition; no people, text, logos, aerial fields or technology overlays.
 - Our Approach vignette and seven journey illustrations: original inline SVG, with schematic plant/root/bud/flower/fruit progression. Labels and explanations are selectable bilingual HTML using the existing data-zh/data-en language switch. Illustrations are conceptual, not crop-specific technical diagrams.
+
+## Integrated Our Approach study — 2026-10-12
+
+- `plant-health-study.svg`: original vector botanical study, drawn for the unified Our Approach composition. Organic leaves, fine venation, a shared soil horizon and branching roots connect the header to the six principles. The cropped study is decorative and schematic; it contains no embedded text. CSS controls its crop, fading mask and low contrast behind content.
+- The previous standalone seedling vignette is removed from Our Approach. The Plant Health Journey illustrations and Hero image are retained.
