@@ -1,0 +1,44 @@
+/* Standalone dropdown preview; the existing Mega Menu stylesheet is untouched. */
+#navigation.dropdown-navigation { position: static; display: block; }
+#navigation ul { list-style: none; margin: 0; padding: 0; }
+#navigation .dropdown-main { display: flex; align-items: center; gap: clamp(10px, 1.6vw, 26px); }
+#navigation li { position: relative; }
+#navigation a, #navigation .dropdown-toggle { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 44px; padding: 11px 20px; border: 0; background: transparent; color: var(--dark); font: inherit; font-size: 14px; font-weight: 400; line-height: 1.6; text-align: left; white-space: normal; text-decoration: none; }
+#navigation .dropdown-main > li > a,
+#navigation .dropdown-main > li > .dropdown-toggle { padding: 36px 0; font-size: 15px; line-height: 1.5; white-space: nowrap; gap: 8px; }
+#navigation a::after { display: none; }
+#navigation .dropdown-arrow { flex: 0 0 5px; height: 5px; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(-45deg); }
+#navigation .dropdown-main > li > .dropdown-toggle .dropdown-arrow { transform: rotate(45deg); margin-top: -3px; }
+#navigation .dropdown-panel { position: absolute; top: 0; left: calc(100% - 1px); width: max-content; min-width: 220px; max-width: 260px; padding: 7px 0; border: 1px solid var(--line); border-radius: 2px; background: #fff; box-shadow: 0 8px 20px rgba(29,56,47,.07); z-index: 2; transform: translateY(var(--dropdown-shift, 0px)); }
+#navigation .dropdown-main > li > .dropdown-panel { top: 100%; left: 0; }
+#navigation .dropdown-panel[data-side="left"] { left: auto; right: calc(100% - 1px); }
+#navigation .dropdown-main > li > .dropdown-panel[data-side="left"] { left: auto; right: 0; }
+#navigation .dropdown-panel[hidden] { display: none; }
+#navigation .dropdown-row { display: flex; align-items: stretch; }
+#navigation .dropdown-row > a { flex: 1; min-width: 0; padding-right: 4px; }
+#navigation .dropdown-toggle--split { flex: 0 0 44px; width: 44px; padding: 0; justify-content: center; }
+#navigation .dropdown-panel .dropdown-panel .dropdown-panel a { font-size: 13px; font-weight: 400; }
+#navigation .dropdown-toggle[aria-expanded="true"], #navigation a[aria-current="page"] { font-weight: 600; }
+#navigation .dropdown-toggle[aria-expanded="true"] > .dropdown-arrow { color: var(--gold); }
+#navigation a:focus-visible, #navigation button:focus-visible { outline: 2px solid var(--gold); outline-offset: -3px; }
+#navigation .dropdown-sr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (hover: hover) { #navigation a:hover, #navigation .dropdown-toggle:hover { color: #85724e; } }
+@media (min-width: 801px) and (max-width: 1150px) {
+  #navigation .dropdown-main { gap: 15px; }
+  #navigation .dropdown-main > li > a, #navigation .dropdown-main > li > .dropdown-toggle { font-size: 13px; gap: 6px; }
+}
+@media (min-width: 801px) and (max-width: 950px) {
+  #navigation .dropdown-main { gap: 10px; }
+  #navigation .dropdown-main > li > a, #navigation .dropdown-main > li > .dropdown-toggle { font-size: 12px; gap: 5px; }
+}
+@media (max-width: 800px) {
+  #navigation.dropdown-navigation { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 10px 6% 24px; max-height: calc(100dvh - 76px); overflow-y: auto; overscroll-behavior: contain; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 8px 20px rgba(29,56,47,.07); }
+  #navigation.dropdown-navigation.open { display: block; }
+  #navigation .dropdown-main { display: block; }
+  #navigation .dropdown-main > li > a, #navigation .dropdown-main > li > .dropdown-toggle { padding: 17px 0; font-size: 16px; white-space: normal; border-bottom: 1px solid var(--line); }
+  #navigation .dropdown-panel, #navigation .dropdown-main > li > .dropdown-panel { position: static; width: auto; min-width: 0; max-width: none; margin: 6px 0 10px 3px; padding: 0 0 0 12px; border: 0; border-left: 1px solid var(--line); box-shadow: none; transform: none; }
+  #navigation .dropdown-panel a, #navigation .dropdown-panel .dropdown-toggle { padding: 10px 8px; min-height: 44px; }
+  #navigation .dropdown-toggle--split { padding: 0; }
+  #navigation .dropdown-arrow { transform: rotate(45deg); margin-top: -3px; }
+  #navigation .dropdown-toggle[aria-expanded="true"] .dropdown-arrow { transform: rotate(225deg); margin-top: 3px; }
+}

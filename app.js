@@ -116,6 +116,6 @@ nav.querySelectorAll('a').forEach(a=>{
 });
 if(navPage==='business.html'){
   const division=new URLSearchParams(location.search).get('division');
-  if(division&&/^[0-3]$/.test(division))nav.querySelectorAll('.mega-column')[Number(division)].dataset.current='true';
+  if(division&&/^[0-3]$/.test(division))nav.querySelectorAll('.mega-column')[Number(division)]?.setAttribute('data-current','true');
 }
 document.querySelector('#year').textContent=new Date().getFullYear();try{lang=localStorage.getItem('tii-language')==='en'?'en':'zh'}catch{}setLanguage(lang);startTimer();
