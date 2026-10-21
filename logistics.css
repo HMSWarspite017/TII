@@ -1,0 +1,132 @@
+/* Logistics page only; follows the Plant Health page layout. Shared TII navigation, tokens and language logic are reused. */
+.logistics-page main{overflow-wrap:break-word}
+.logistics-page .lg-section{padding-block:90px}
+.logistics-page h2{font-size:clamp(30px,2.8vw,42px);font-weight:400;line-height:1.4;letter-spacing:.3px;margin-bottom:0;text-wrap:balance}
+/* Clause spans keep the comma break where text-wrap: balance is unsupported. */
+.logistics-page #overview-title>span{display:inline-block;max-width:100%}
+html[lang=en] .logistics-page #overview-title>span:first-child{margin-right:.28em}
+.logistics-page main p{text-wrap:pretty}
+.logistics-page h3{font-size:20px;font-weight:500;line-height:1.45;margin-bottom:12px}
+.logistics-page .lg-lead,.logistics-page .lg-section-heading>p{font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:0}
+.logistics-page .lg-number{font-size:12px;letter-spacing:1.5px;color:var(--gold);font-variant-numeric:tabular-nums}
+.logistics-page .lg-title-second{color:#788369}
+
+/* Intro: light ground, copy left, photograph right. */
+.logistics-page .lg-intro{background:var(--platinum);padding:30px 0 48px}
+.logistics-page .breadcrumbs{margin-bottom:30px;flex-wrap:wrap;row-gap:8px}
+.logistics-page .lg-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:6%;align-items:center}
+.logistics-page .lg-intro-copy{padding-block:20px}
+.logistics-page h1{font-size:clamp(38px,4vw,60px);font-weight:400;letter-spacing:-.6px;line-height:1.3;margin:0 0 26px}
+.logistics-page .lg-intro .lg-lead{max-width:570px}
+.logistics-page .lg-intro-visual{margin:0;min-width:0}
+.logistics-page .lg-intro-visual>img{aspect-ratio:1.14;height:auto;object-fit:cover;object-position:50% 56%}
+.logistics-page .lg-intro-visual figcaption{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;color:var(--muted);padding-top:16px;line-height:1.5}
+.logistics-page .lg-intro-visual figcaption>span:first-child{letter-spacing:1.6px;color:var(--dark)}
+.logistics-page .lg-section-heading{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:42px}
+.logistics-page .lg-section-heading>p{max-width:350px}
+
+/* Overview: heading left, numbered services right. */
+.logistics-page .lg-overview{display:grid;grid-template-columns:1fr 1fr;gap:10%}
+.logistics-page .lg-overview h2{margin-bottom:22px}
+.logistics-page .lg-overview .lg-lead{max-width:440px}
+.logistics-page .lg-service-list{list-style:none;padding:0;margin:0}
+.logistics-page .lg-service-list li{display:grid;grid-template-columns:28px 1fr;gap:16px;align-items:start;padding-block:26px;border-top:1px solid var(--line)}
+.logistics-page .lg-service-list li:last-child{border-bottom:1px solid var(--line)}
+.logistics-page .lg-service-list .lg-number{padding-top:6px}
+.logistics-page .lg-service-list h3{font-size:22px;margin-bottom:8px}
+.logistics-page .lg-service-list p,.logistics-page .lg-journey-stages p,.logistics-page .lg-client-grid p{margin:0;font-size:15px;line-height:1.8;color:var(--muted)}
+
+/* Cargo journey: generic four-stage process. */
+.logistics-page .lg-journey{padding-block:64px;background:#f3f4ef;border-block:1px solid var(--line)}
+.logistics-page .lg-journey .eyebrow,.logistics-page .lg-regions .eyebrow{margin:0 0 20px;font-size:12px;letter-spacing:2px}
+.logistics-page #journey-title,.logistics-page #regions-title{font-size:34px;line-height:1.35;letter-spacing:0}
+.logistics-page .lg-journey .lg-section-heading{margin-bottom:36px}
+.logistics-page .lg-journey-stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 24px;list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.logistics-page .lg-journey-stages>li{position:relative;min-width:0;padding-top:22px}
+.logistics-page .lg-journey-stages>li::before{content:'';position:absolute;top:-1px;left:0;width:1px;height:6px;background:var(--gold)}
+.logistics-page .lg-journey-stages .lg-number{display:block;margin-bottom:10px}
+.logistics-page .lg-journey-stages h3{font-size:19px;margin-bottom:6px}
+.logistics-page .lg-journey-note{margin:32px 0 0;font-size:11px;line-height:1.6;color:var(--muted)}
+
+/* Regional network: same card rhythm as the crop solutions grid. */
+.logistics-page .lg-regions{background:#f8f9f5}
+.logistics-page .lg-region-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.logistics-page .lg-region-card{min-width:0}
+.logistics-page .lg-region-photo{aspect-ratio:4/5;overflow:hidden;background:var(--platinum)}
+.logistics-page .lg-region-photo img{height:100%;object-fit:cover;transition:transform .5s}
+.logistics-page .lg-region-name{display:flex;align-items:baseline;gap:15px;margin-top:22px}
+.logistics-page .lg-region-name h3{font-size:25px;margin-bottom:9px}
+.logistics-page .lg-region-card>p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.6}
+.logistics-page .lg-region-card>p:first-of-type{border-top:1px solid var(--line);padding-top:12px;margin-top:8px}
+.logistics-page .lg-region-entity{color:var(--dark);font-size:11px;letter-spacing:.4px}
+
+/* Who we serve. */
+.logistics-page .lg-clients{display:grid;grid-template-columns:.95fr 1.5fr;gap:7%}
+.logistics-page .lg-clients h2{font-size:clamp(28px,2.4vw,36px);line-height:1.55}
+.logistics-page .lg-clients h2>span{display:inline-block;max-width:100%;text-wrap:balance}
+.logistics-page .lg-client-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 35px}
+.logistics-page .lg-client-grid article{border-top:1px solid var(--line);padding-top:20px;min-width:0}
+.logistics-page .lg-client-grid .lg-number{display:block;margin-bottom:14px}
+
+/* Contact: same treatment as the Plant Health contact band. */
+.logistics-page .lg-contact{padding-block:55px;background:var(--platinum)}
+.logistics-page .lg-contact>.wrap{display:flex;justify-content:space-between;align-items:center;gap:35px}
+.logistics-page .lg-contact h2{font-size:clamp(28px,2.6vw,38px)}
+.logistics-page .lg-contact .eyebrow{margin-bottom:15px}
+.logistics-page .lg-contact .lg-lead{margin-top:14px;max-width:640px}
+.logistics-page .lg-contact .text-link{flex-shrink:0;margin:0}
+
+html[lang=en] .logistics-page h1{font-size:clamp(38px,3.7vw,55px);letter-spacing:-1.8px}
+@media(hover:hover){.logistics-page .lg-region-card:hover img{transform:scale(1.035)}}
+@media(max-width:1100px){
+  .logistics-page .lg-intro-grid{gap:5%}
+  .logistics-page .lg-intro-visual>img{aspect-ratio:.95}
+  .logistics-page .lg-clients{grid-template-columns:1fr;gap:36px}
+  .logistics-page .lg-region-grid{gap:18px}
+  .logistics-page .lg-journey .lg-section-heading,.logistics-page .lg-regions .lg-section-heading{display:block}
+  .logistics-page .lg-journey .lg-section-heading>p,.logistics-page .lg-regions .lg-section-heading>p{max-width:570px;margin-top:20px}
+}
+@media(max-width:800px){
+  .logistics-page .lg-section{padding-block:60px}
+  .logistics-page .lg-intro{padding:24px 0 32px}
+  .logistics-page .lg-intro-grid{grid-template-columns:1fr;gap:30px}
+  .logistics-page .lg-intro-copy{padding:0}
+  .logistics-page .lg-intro-visual>img{aspect-ratio:1.6;object-position:58% 55%}
+  .logistics-page h1,html[lang=en] .logistics-page h1{font-size:clamp(35px,6.5vw,50px);letter-spacing:-1px}
+  .logistics-page .lg-section-heading{display:block;margin-bottom:30px}
+  .logistics-page .lg-section-heading>p{margin-top:20px;max-width:500px}
+  .logistics-page .lg-overview{grid-template-columns:1fr;gap:30px}
+  .logistics-page .lg-overview .lg-lead{max-width:600px}
+  .logistics-page .lg-journey{padding-block:48px}
+  .logistics-page .lg-journey-stages{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 18px;border:0}
+  .logistics-page .lg-journey-stages>li{border-top:1px solid var(--line)}
+  .logistics-page #journey-title,.logistics-page #regions-title{font-size:28px;line-height:1.4}
+  .logistics-page .lg-region-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 18px}
+  .logistics-page .lg-region-photo{aspect-ratio:1}
+  .logistics-page .lg-contact>.wrap{display:block}
+  .logistics-page .lg-contact .text-link{margin-top:20px}
+}
+@media(max-width:540px){
+  .logistics-page .eyebrow{font-size:11px;letter-spacing:2px;margin-bottom:20px}
+  .logistics-page .breadcrumbs{font-size:12px;gap:10px;margin-bottom:30px}
+  .logistics-page .lg-lead,.logistics-page .lg-section-heading>p{font-size:14px;line-height:1.9}
+  .logistics-page .lg-service-list li{grid-template-columns:24px 1fr;gap:12px}
+  .logistics-page .lg-service-list h3{font-size:20px}
+  .logistics-page .lg-service-list p,.logistics-page .lg-journey-stages p,.logistics-page .lg-client-grid p{font-size:14px}
+  .logistics-page .lg-journey-stages{grid-template-columns:1fr;gap:0}
+  .logistics-page .lg-journey-stages>li{display:grid;grid-template-columns:24px minmax(0,1fr);column-gap:12px;padding:18px 0}
+  .logistics-page .lg-journey-stages>li::before{content:none}
+  .logistics-page .lg-journey-stages .lg-number{grid-row:1/3;margin:0;padding-top:4px}
+  .logistics-page .lg-journey-stages h3{font-size:18px}
+  .logistics-page .lg-region-grid{gap:26px 15px}
+  .logistics-page .lg-region-photo{aspect-ratio:4/5}
+  .logistics-page .lg-region-name{gap:10px;margin-top:15px}
+  .logistics-page .lg-region-name h3{font-size:22px}
+  .logistics-page .lg-client-grid{grid-template-columns:1fr;gap:24px}
+  .logistics-page .lg-client-grid article{display:grid;grid-template-columns:25px 1fr;gap:0 16px}
+  .logistics-page .lg-client-grid .lg-number{padding-top:5px;margin:0}
+  .logistics-page .lg-client-grid p{grid-column:2}
+}
+@media(max-width:359px){
+  .logistics-page .lg-region-grid{grid-template-columns:1fr}
+}
